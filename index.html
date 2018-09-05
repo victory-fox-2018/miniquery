@@ -37,7 +37,27 @@
 
             EventDispatcher.trigger('#eyed', 'click')
             EventDispatcher.trigger('.klass', 'click')
-            EventDispatcher.trigger('a', 'click')         
+            EventDispatcher.trigger('a', 'click')
+            
+            // Ajax Wrapper
+            AjaxWrapper.request({
+                url: 'https://reqres.in/api/users/1',
+                type: 'GET',
+                success: () => {
+                    alert('Ajax Wrapper Request Successfully Executed!')
+                },
+                fail: (on) => {
+                    alert(`Ajax Wrapper Request Failed ${on}`)
+                }
+            })
+
+            // Alias Miniquery
+            console.log(miniquery(SweetSelector.select('.klass')))
+            miniquery(DOM.hide('#eyed'))
+
+            // Alias $
+            console.log($(SweetSelector.select('a')))
+            $(DOM.hide('.klass'))
         </script>
     </body>
 </html>
