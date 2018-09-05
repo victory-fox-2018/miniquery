@@ -21,16 +21,16 @@
       DOM.removeClass('.klass', 'shadi')
       EventDispatcher.on('.klass', 'click', function() {console.log('awesome')})
       EventDispatcher.trigger('.klass', 'click')
-      // AjaxWrapper.request({
-      //   url: 'someurl',
-      //   type: 'GET',
-      //   success: () => {
-      // 
-      //   },
-      //   fail: () => {
-      // 
-      //   }
-      // })
+      AjaxWrapper.request({
+        url: 'someurl',
+        type: 'GET',
+        success: () => {
+      
+        },
+        fail: () => {
+      
+        }
+      })
     </script>
   </body>
   
