@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type='text/javascript' src='./lib/miniquery.js'></script>
+</head>
+<body>
+    <div id="eyed">eyed</div>
+    <div class="klass">klass</div>
+    <a href="#hello">click me</a>
+
+    <script>
+        console.log(SweetSelector.select('#eyed'))
+        console.log(SweetSelector.select('.klass'))
+        console.log(SweetSelector.select('a'))
+
+        DOM.hide('.klass')
+        DOM.show('.klass')
+
+        DOM.addClass('.klass', 'shadi')
+        DOM.removeClass('.klass', 'shadi')
+    </script>
+</body>
+</html>
