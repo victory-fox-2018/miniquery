@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  
+  <!-- RELEASE 0 - SELECTOR -->
+  <!-- <h1>Release 0</h1> -->
+  <div id="eyed">eyed</div>
+  <!-- <div class="klass1">klass</div>
+  <a href="#hello">click me</a> -->
+  <hr>
+
+  <h1>Release 1</h1>
+  <div class="klass" style="width: 100px; height: 100px; background-color: black">klass</div> -->
+
+  <hr>
+
+  <h1>Release 2</h1>
+  <div class="klass">Klass</div>
+
+  <script src="./lib/miniquery.js"></script>
+  <script>
+    // RELEASE 0 - SELECTOR
+    console.log(SweetSelector.select('#eyed'));
+    // console.log(SweetSelector.select('.klass1'));
+    // console.log(SweetSelector.select('a'));
+
+    // RELEASE 1 - DOM MANIPULATION
+    // DOM.hide('.klass');
+    // DOM.show('.klass');
+    // DOM.addClass('.klass', 'shadi');
+    // DOM.removeClass('.klass', 'shadi');
+
+    // RELEASE 2 - Event Dispatch
+    //   EventDispatcher.on('.klass', 'click', function() {
+    //     console.log('Awesome');
+    //   });
+    //   EventDispatcher.trigger('.klass', 'click');
+
+    // RELEASE 3 - AJAX
+    AjaxWrapper.request({
+      url: 'localhost',
+      type: 'GET',
+      success: function() {
+        // do something
+      },
+      fail: function() {
+        // do something
+      }
+    });
+
+    // RELEASE 4 - miniquer
+
+  </script>
+
+</body>
+</html>
