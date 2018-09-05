@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/hacktiv8/miniquery/issues"
   },
-  "homepage": "https://github.com/hacktiv8/miniquery#readme"
+  "homepage": "https://github.com/hacktiv8/miniquery#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  },
+  "directories": {
+    "lib": "lib"
+  }
 }
