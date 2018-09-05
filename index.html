@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script src="./lib/miniquery.js">
+    </script>
+</head>
+
+<body>
+    <div class="div1">
+        <span id="id">ID</span>
+    </div>
+    <div class="div2">
+        <p class="klas">Class</p>
+    </div>
+    <div class="div3">
+        <span>Tag</span>
+    </div>
+    <div>
+        <button onclick=""></button>
+    </div>
+    <script>
+        SweetSelector.select("#id").style.color = "blue"
+        SweetSelector.select(".klas")[0].style.color = "red"
+        SweetSelector.select("span")[1].style.color = "red"
+        
+        DOM.hide(".div1")
+        DOM.show(".div1")
+
+        DOM.addClass(".div2","kocak")
+        DOM.addClass(".div2","kocakk")   
+        DOM.removeClass(".div2","kocak")
+
+
+        // DOM.hide('.div1')
+    </script>
+</body>
+
+</html>
