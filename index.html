@@ -29,6 +29,15 @@
             DOM.removeClass('#eyed', 'shadi')
             DOM.removeClass('.klass', 'shadi')
             DOM.removeClass('a', 'shadi')
+
+            // Event Dispatcher
+            EventDispatcher.on('#eyed', 'click', () => {alert('Event Triggered on #eyed')})
+            EventDispatcher.on('.klass', 'click', () => {alert('Event Triggered on .klass')})
+            EventDispatcher.on('a', 'click', () => {alert('Event Triggered on <a>')})
+
+            EventDispatcher.trigger('#eyed', 'click')
+            EventDispatcher.trigger('.klass', 'click')
+            EventDispatcher.trigger('a', 'click')         
         </script>
     </body>
 </html>
