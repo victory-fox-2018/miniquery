@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MINI QUERY</title>
+    <script src="lib/miniquery.js"></script>
+  </head>
+  
+  <body>
+    <div id="eyed">Eyed</div>
+    <div class="klass">Klass</div>
+    <a href="#">click me</a>
+    
+    <script>
+      console.log(SweetSelector.select('#eyed'))
+      console.log(SweetSelector.select('.klass'))
+      console.log(SweetSelector.select('a'))
+      DOM.hide('.klass')
+      DOM.show('.klass')
+      DOM.addClass('.klass', 'shadi')
+      DOM.removeClass('.klass', 'shadi')
+      EventDispatcher.on('.klass', 'click', function() {console.log('awesome')})
+      EventDispatcher.trigger('.klass', 'click')
+      // AjaxWrapper.request({
+      //   url: 'someurl',
+      //   type: 'GET',
+      //   success: () => {
+      // 
+      //   },
+      //   fail: () => {
+      // 
+      //   }
+      // })
+    </script>
+  </body>
+  
+</html>
