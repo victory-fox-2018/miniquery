@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Miniquery</title>
+        <script type="text/javascript" src="./lib/miniquery.js"></script>
+    </head>
+    <body>
+        <div id='eyed'>Eyed</div>
+        <div class='klass'>Klass</div>
+        <a href='#hello'>click me</a>
+
+        <script>
+            // Sweet Selector
+            console.log(`${SweetSelector.select('#eyed')}\n${SweetSelector.select('.klass')}\n${SweetSelector.select('a')}`)
+        </script>
+    </body>
+</html>
