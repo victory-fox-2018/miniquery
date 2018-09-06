@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Mini-Query</title>
+        <script src ='./lib/miniquery.js'></script>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <br/>
+        <div class="klass">klass</div>
+        <br/>
+        <div class="shadi">Shadi</div>
+        <div id="eyed">Test2</div>
+        <script>
+            //testing release 0
+            // console.log(SweetSelector.select('.klass'))
+            // console.log(SweetSelector.select('#eyed'))
+            // console.log(SweetSelector.select('h1'))
+
+            //testing release 1
+            // DOM.hide('.klass')
+            // DOM.show('.klass')
+            // DOM.addClass('.klass','shadi');
+            // DOM.removeClass('.klass','shadi');
+            AjaxWrapper.request({
+                url: 'http://localhost:3001',
+                type : 'GET',
+                success : function(response){
+                    console.log('success', response)
+                },
+                fail : function(){
+                    console.log('fail')
+                }
+            })
+            console.log('TESTTT')
+        </script>
+    </body>
+</html>
