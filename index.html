@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MiniQuery</title>
+  <script src="./lib/miniquery.js"></script>
+</head>
+<body>
+  <div id="eyed">eyed</div>
+  <div class="klass">klass</div>
+  <a href="#hello">click me</a>
+  <script>
+    //Release 0
+    //console.log(SweetSelector.select('#eyed'));
+    //console.log(SweetSelector.select('.klass'));
+    //console.log(SweetSelector.select('a'));
+
+    //Release 1
+    //DOM.hide('.klass');
+    //DOM.show('.klass');
+    //console.log(DOM.addClass('.klass', 'shadi'));
+    //console.log(DOM.removeClass('.klass', 'shadi'))
+    
+    //Release 2
+    // EventDispatcher.on('.klass', 'click', function() { console.log("awesome")})
+    // EventDispatcher.trigger('.klass', 'click')
+
+    //Release 3
+    // AjaxWrapper.request({
+    //   url: 'https://yesno.wtf/api',
+    //   type: 'GET',
+    //   success: function() {
+    //     console.log('success!')
+    //   },
+    //   fail: function() {
+    //     console.log('failed!')
+    //   }
+    // })
+
+    //Release 4
+    //miniquery('.klass').hide()
+    //miniquery('.klass').show()
+    //miniquery('.klass').addClass('shadi')
+    //miniquery('.klass').removeClass('shadi')
+    // miniquery('.klass').on('click', function() { console.log("awesome")})
+    // miniquery('.klass').trigger('click')
+    // miniquery().ajax({
+    //   url: 'https://yesno.wtf/api',
+    //   type: 'GET',
+    //   success: function() {
+    //     console.log('success!')
+    //   },
+    //   fail: function() {
+    //     console.log('failed!')
+    //   }
+    // })
+
+  </script>
+</body>
+</html>
