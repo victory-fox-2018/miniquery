@@ -21,6 +21,17 @@
             // DOM.show('.klass')
             // DOM.addClass('.klass','shadi');
             // DOM.removeClass('.klass','shadi');
+            AjaxWrapper.request({
+                url: 'http://localhost:3001',
+                type : 'GET',
+                success : function(response){
+                    console.log('success', response)
+                },
+                fail : function(){
+                    console.log('fail')
+                }
+            })
+            console.log('TESTTT')
         </script>
     </body>
 </html>
