@@ -10,18 +10,23 @@
 </head>
 
 <body>
-  <h1 class="hallo" id="bye">
+  <h1 class="hallo" id="bye" style="display:none;">
     Halo
   </h1>
   <script>
-    const data = SweetSelector.select('h1');
-    const data2 = DOM.show('.hallo');
+    // const data = SweetSelector.select('.hallo');
+    // const data2 = DOM.addClass('.hallo', 'qhudaa');
+    // console.log(data);
 
-    EventDispatcher.on('.hallo', "focus", () => {
-      console.log("boom");
-    });
+    miniquery('.hallo').addClass('qherja');
 
-    EventDispatcher.trigger('.hallo', "onmouseover");
+
+
+    // EventDispatcher.on('.hallo', "focus", () => {
+    //   console.log("boom");
+    // });
+
+    // EventDispatcher.trigger('.hallo', "onmouseover");
   </script>
 
 </body>
